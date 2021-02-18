@@ -1,0 +1,11 @@
+.navbar {
+  border: 1px solid black;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+
+  .user-settings {
+    margin-left: auto; //sets this to the far right side
+  }
+}
