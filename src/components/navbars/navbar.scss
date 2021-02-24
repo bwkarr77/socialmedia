@@ -1,3 +1,10 @@
+//screen sizes for max width of NAVBAR
+$mobile: 600px; //shows: logo, category logo, search, account button
+$small: 790px; //shows mobile and: 3 buttons
+$medium: 1000px; //shows small and: 3 more buttons
+$large: 1070px; //shows medium and: category name
+$full: 1200px; //shows large and: username
+
 .navbar {
   border: 1px solid black;
   height: 50px;
@@ -5,7 +12,51 @@
   display: flex;
   flex-direction: row;
 
-  .user-settings {
+  .nav-access {
     margin-left: auto; //sets this to the far right side
+    // display: flex;
+  }
+
+  .search-bar,
+  .logo,
+  .nav-access {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar {
+    height: 36px;
+    border: 1px solid grey;
+    background-color: rgb(246, 247, 248);
+    // width: 100%;
+
+    .search-input {
+      width: 80%;
+      border: none;
+      background-color: purple;
+      // width: 510px;
+    }
+  }
+
+  .logo {
+    background-color: grey;
+    // display: flex;
+    // align-items: center;
+    margin-left: 20px;
+
+    a {
+      color: rgb(255, 69, 0);
+      // border: 1px solid lightcyan;
+      font-size: 32px;
+    }
+  }
+
+  .login,
+  .signIn {
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    // Shows only: logo, category, search bar, account button
   }
 }
