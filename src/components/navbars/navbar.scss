@@ -11,10 +11,30 @@ $full: 1200px; //shows large and: username
 
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   .nav-access {
     margin-left: auto; //sets this to the far right side
     // display: flex;
+
+    .left-section,
+    .right-section {
+      width: 130px;
+    }
+
+    .left-section {
+      border-right: 1px solid rgb(175, 175, 175);
+    }
+
+    .left-buttons,
+    .right-buttons {
+      padding: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .user-settings {
+      width: 90px;
+    }
   }
 
   .search-bar,
@@ -28,13 +48,17 @@ $full: 1200px; //shows large and: username
     height: 36px;
     border: 1px solid grey;
     background-color: rgb(246, 247, 248);
-    // width: 100%;
+    width: 100%;
+
+    .search-icon,
+    .search-clear {
+      padding: 0 6px;
+    }
 
     .search-input {
-      width: 80%;
+      width: 100%;
       border: none;
-      background-color: purple;
-      // width: 510px;
+      background-color: none;
     }
   }
 
@@ -48,12 +72,17 @@ $full: 1200px; //shows large and: username
       color: rgb(255, 69, 0);
       // border: 1px solid lightcyan;
       font-size: 32px;
+      text-decoration: none;
+    }
+    span {
+      color: black;
     }
   }
 
-  .login,
+  .logIn,
   .signIn {
     border-radius: 10px;
+    width: 95px;
   }
 
   @media screen and (max-width: $mobile) {
